@@ -1,0 +1,18 @@
+{
+  "name": "qauto-playwright-course-starter",
+  "private": true,
+  "scripts": {
+    "preflight": "node scripts/preflight.mjs",
+    "test": "playwright test",
+    "test:guest": "playwright test tests/guest-garage.spec.ts --project=chromium",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "lab:broken": "playwright test -c playwright.lab.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}
